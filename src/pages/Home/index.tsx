@@ -11,9 +11,6 @@ const Home = () => {
 
   return (
     <div className="flex h-screen bg-gray-200">
-      <div className="flex flex-col flex-shrink-0 w-64 bg-white border-r">
-        <Sidebar/>
-      </div>
       <div className="flex flex-col flex-grow">
         <div className="p-4 border-b">
           <Toolbar/>
