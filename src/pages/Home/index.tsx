@@ -15,7 +15,7 @@ const Home = () => {
         <Sidebar/>
       </div>
       <div className="flex flex-col flex-grow">
-        <div className="flex items-center justify-between p-4 border-b">
+        <div className="p-4 border-b">
           <Toolbar/>
         </div>
         <div className="flex-grow p-4 bg-white">
