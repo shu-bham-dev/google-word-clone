@@ -99,25 +99,55 @@ const Home = () => {
         <div className="px-4 py-2 border-b">
           <Toolbar />
         </div>
-        <div className="flex bg-[#EDF2FA] rounded-full p-1.5 mx-6">
-          <BiUndo />
-          <BiRedo />
-          <BiPrinter />
-          <MdSpellcheck />
-          <TfiPaintRoller />
-          <PopoverHeadless options={zoomOptions} placeholder={zoomValue} />
-          <PopoverHeadless options={textOptions} placeholder={textValue} />
-          <PopoverHeadless options={textFont} placeholder={fontValue} />
-          <BiMinus
-            onClick={() => setFontSize(fontSize - 1)}
-            className="cursor-pointer"
-          />
-          <div>{fontSize}</div>
-          <BiPlus
-            onClick={() => setFontSize(fontSize + 1)}
-            className="cursor-pointer"
-          />
-          <BiBold />
+        <div className="flex bg-[#EDF2FA] rounded-full p-1.5 mx-6 items-center">
+          <div className="flex border border-0 border-r-2 mr-4 items-center">
+            <BiUndo className="mr-2" size="1.4em" />
+            <BiRedo className="mr-2" size="1.4em" />
+            <BiPrinter className="mr-2" size="1.2em" />
+            <MdSpellcheck className="mr-2" size="1.2em" />
+            <TfiPaintRoller className="mr-2" size="1.2em" />
+            <PopoverHeadless options={zoomOptions} placeholder={zoomValue} />
+          </div>
+          <div className="border border-0 border-r-2 mr-4 items-center">
+            <PopoverHeadless options={textOptions} placeholder={textValue} />
+          </div>
+          <div className="border border-0 border-r-2 mr-4 items-center">
+            <PopoverHeadless options={textFont} placeholder={fontValue} />
+          </div>
+          <div className="flex border border-0 border-r-2 mr-4 items-center">
+            <BiMinus
+              onClick={() => setFontSize(fontSize - 1)}
+              size="1.2em"
+              className="cursor-pointer mr-2"
+            />
+            <div className="mr-2">{fontSize}</div>
+            <BiPlus
+              size="1.2em"
+              className="cursor-pointer mr-2"
+              onClick={() => setFontSize(fontSize + 1)}
+            />
+          </div>
+          <div className="flex border border-0 border-r-2 mr-2 items-center">
+            <BiBold className="mr-2" size="1.2em" />
+            <BiItalic className="mr-2" size="1.2em" />
+            <BiUnderline className="mr-2" size="1.2em" />
+            <BiFontColor className="mr-2" size="1.2em" />
+            <BiHighlight className="mr-2" size="1.2em" />
+          </div>
+          <div className="flex border border-0 border-r-2 mr-2 items-center">
+            <FiLink2 className="mr-2" size="1.2em" />
+            <MdOutlineAddComment className="mr-2" size="1.2em" />
+            <MdOutlineInsertPhoto className="mr-2" size="1.2em" />
+          </div>
+          <div className="flex border border-0 border-r-2 mr-2 items-center">
+            <BiAlignJustify className="mr-2" size="1.2em" />
+            <BiAlignLeft className="mr-2" size="1.2em" />
+            <BiAlignMiddle className="mr-2" size="1.2em" />
+            <BiAlignRight className="mr-2" size="1.2em" />
+            <BiListUl className="mr-2" size="1.2em" />
+            <BiListOl className="mr-2" size="1.2em" />
+          </div>
+          <BiUpArrow />
         </div>
         <div className="flex-grow p-4 bg-white mx-60 my-4">
           <textarea
