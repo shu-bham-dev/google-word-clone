@@ -27,9 +27,9 @@ const PopoverHeadless: React.FC<AppProps> = ({
           <>
             <Popover.Button
               className='
-                group inline-flex items-center rounded-m text-base font-normal text-xs w-full justify-center'
+                group inline-flex items-center rounded-m text-base font-normal text-sm w-full justify-center'
             >
-              <span className="mr-2">{placeholder}</span>
+              <span className="mr-4">{placeholder}</span>
             </Popover.Button>
             <Transition
               as={Fragment}
