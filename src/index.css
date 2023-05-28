@@ -6,3 +6,63 @@ body{
   margin: 0;
   background-color: #F9FBFD;
 }
+
+.container .ql-editor {
+  width: 51rem;
+  padding: 4rem;
+  margin: 1rem;
+  height: 66rem;
+  outline: 1px solid #c7c7c7;
+  background-color: white;
+}
+.container .ql-container.ql-snow {
+  width: 125%;
+  border: none;
+  display: flex;
+  justify-content: center;
+}
+
+.container .ql-toolbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .ql-toolbar.ql-snow {
+  display: flex;
+  justify-content: center;
+  /* position: sticky; */
+  top: 0;
+  z-index: 1;
+  background-color: rgb(237 242 250);
+  border-radius: 100px;
+  margin: 0 20px;
+  width: 118%;
+  border: none;
+}
+
+@page {
+  margin: 6rem;
+}
+
+@media print {
+  body {
+    background-color: none;
+  }
+
+  .container .ql-editor {
+    width: 39rem;
+    height: 54rem;
+    padding: 0;
+    margin: 0;
+    box-shadow: none;
+    align-self: flex-start;
+  }
+  .container > .ql-toolbar.ql-snow {
+    display: none;
+  }
+}
+
+.repeat {
+  width: 24px;
+}

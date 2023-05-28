@@ -5,6 +5,7 @@ import { TbLock } from 'react-icons/tb';
 import { BsChatRightText } from 'react-icons/bs';
 import { HiOutlineVideoCamera } from 'react-icons/hi';
 import PopoverHeadless from 'components/HeadlessDropDown';
+
 const Toolbar = () => {
   const options = [
     { name: 'New', href: '#' },
@@ -33,7 +34,7 @@ const Toolbar = () => {
         <FaHistory size="1.3em" className="mr-6 cursor-pointer" />
         <BsChatRightText size="1.3em" className="mr-6 cursor-pointer" />
         <HiOutlineVideoCamera size="1.8em" className="mr-6 cursor-pointer" />
-        <div className='rounded-full cursor-pointer bg-blue-300 flex h-4 p-4 items-center mr-10'>
+        <div className="rounded-full cursor-pointer bg-blue-300 flex h-4 p-4 items-center mr-10">
           <TbLock size="1.2em" className="mr-2" />
           <div className="text-sm">Share</div>
         </div>
