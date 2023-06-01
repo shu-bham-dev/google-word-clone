@@ -5,11 +5,7 @@ This project is a frontend clone of Google Word created using ReactJS with TypeS
 ## Features
 
 - **Document Creation**: Users can create new documents by providing a title and starting content.
-- **Text Editing**: The clone supports rich text editing features such as formatting options (bold, italic, underline, etc.), text alignment, bullet and numbered lists, and more.
-- **Real-time Collaboration**: Multiple users can collaborate on the same document simultaneously, with changes being reflected in real-time for all users.
-- **User Authentication**: The application includes a user authentication system to ensure secure access to documents and enable personalized experiences.
-- **Document Sharing**: Users can share documents with others by providing a unique link.
-- **Revision History**: The clone keeps track of the document's revision history, allowing users to review previous versions and restore them if needed.
+- **Text Editing**: The clone supports rich text editing features such as formatting options (bold, italic, underline, etc.), text alignment, bullet and numbered lists, and more..
 - **Comments and Suggestions**: Users can leave comments and suggestions on specific sections of the document, facilitating collaboration and feedback.
 - **Export and Import**: Documents can be exported to various formats, such as PDF or Microsoft Word, and imported from compatible file types.
 
